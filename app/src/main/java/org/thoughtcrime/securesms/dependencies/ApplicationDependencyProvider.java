@@ -132,7 +132,7 @@ public class ApplicationDependencyProvider implements ApplicationDependencies.Pr
 
   @Override
   public @NonNull NetworkManager provideNetworkManager() {
-    return NetworkManager.create();
+    return NetworkManager.create(context);
   }
 
   @Override
